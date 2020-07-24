@@ -14,7 +14,7 @@ export enum Names {
   POSITION = 'position',
   WIDTH = 'width',
   WITHOUT_ENLARGEMENT = 'without enlargement',
-  // Extend
+  // Extend & Extract
   TOP = 'top',
   BOTTOM = 'bottom',
   LEFT = 'left',

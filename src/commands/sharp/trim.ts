@@ -36,7 +36,8 @@ export class Command extends SuperCommand {
       } else {
         const buffer = await sharpInstance.toBuffer({ resolveWithObject: true });
         if (justInfo) {
-          process.stdout.write(JSON.stringify(buffer.info));
+          const trimJson = JSON.stringify(buffer.info);
+          process.stdout.write(trimJson);
         } else {
           process.stdout.write(buffer.data);
         }
