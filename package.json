@@ -1,0 +1,33 @@
+{
+  "name": "cli-wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "wrap": "./tsc-out/wrap.js"
+  },
+  "scripts": {
+    "lint": "tslint src/**/*.ts --fix --project tsconfig.json",
+    "tslint": "tslint --config tslint.json --exclude 'node_modules/**' '**/*.ts' --fix",
+    "build": "tsc && chmod +x tsc-out/wrap.js",
+    "watch": "tsc -w",
+    "update": "npm update && npm outdated"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "convert-stream": "^1.0.2",
+    "inquirer": "^6.5.2",
+    "sharp": "^0.25.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^13.5.0",
+    "@types/sharp": "^0.25.0",
+    "tslint": "^6.0.0",
+    "tslint-config-airbnb": "^5.11.2"
+  }
+}
